@@ -89,7 +89,7 @@ func addHandler(w http.ResponseWriter, r *http.Request) {
 	TopKs.Insert(item, count)
 
 	// TODO: more interesting response?
-	fmt.Fprintln(w, "Ok")
+	fmt.Fprintln(w, "Ok", epoch)
 }
 
 type QueryResponse struct {
